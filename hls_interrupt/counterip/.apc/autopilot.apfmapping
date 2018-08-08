@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="incr_des.cpp" path="E:\smez\ccall\hls\incr_des\incr_des.cpp"/>
+    <originFiles name="incr_des.cpp" path="E:\smez\ccall\hls\incr_des\incr_des.cpp"/>
+    <originFiles name="incr_des.cpp" path="E:\smez\ccall\hls\incr_des\incr_des.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

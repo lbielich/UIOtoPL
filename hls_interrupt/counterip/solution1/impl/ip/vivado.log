@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb  8 16:41:29 2018
+# Process ID: 17648
+# Current directory: E:/smez/Training_to_FAEs/hls_interrupt/counterip/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/smez/Training_to_FAEs/hls_interrupt/counterip/solution1/impl/ip/vivado.log
+# Journal file: E:/smez/Training_to_FAEs/hls_interrupt/counterip/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1472] The existence of %HOMEDRIVE%/.Xilinx (e.g. C:/.Xilinx) has been detected.  Due to known issues with the McAfee File and Removable Media Protection (FRP) product, the existance of C:/.Xilinx may cause problems with the Vivado GUI.  If you encounter problems, you can contact IT for assistance with a workaround.  Alternatively, you can move/rename %HOMEDRIVE%:/.Xilinx to a different name such as %APPDATA%/XilinxLicense.
+Sourcing tcl script 'C:/Users/luisb/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+hello everyone
+INFO: [Common 17-1463] Init.tcl in C:/Users/luisb/AppData/Roaming/Xilinx/Vivado/init.tcl is not used. Vivado_init.tcl is already sourced.
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  8 16:41:49 2018...

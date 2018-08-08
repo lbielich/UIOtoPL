@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1518133234662">
+  <ports id="1" name="data_out_data_V" type="PortType" originalName="data_out.data.V" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="data_out_keep_V" type="PortType" originalName="data_out.keep.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="data_out_strb_V" type="PortType" originalName="data_out.strb.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="data_out_user_V" type="PortType" originalName="data_out.user.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="data_out_last_V" type="PortType" originalName="data_out.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="data_out_id_V" type="PortType" originalName="data_out.id.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="data_out_dest_V" type="PortType" originalName="data_out.dest.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="beats" type="PortType" originalName="beats" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="start_V" type="PortType" originalName="i" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="50" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="52" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="64" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="70" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.0"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.3"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.4"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.5"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.6"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <blocks id="31" name="block_31" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_36</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="start_V_read" bitwidth="32" opcode="read" m_display="0">
+      <dataInputObjs>start_V</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="beats_read" originalName="beats" bitwidth="32" opcode="read" m_display="0">
+      <dataInputObjs>beats</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="r_V" lineNumber="21" originalName="r.V" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." rtlName="r_V_fu_123_p2" contextFuncName="counterip" bitwidth="34" opcode="add" m_display="0">
+      <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="r_V_1" lineNumber="25" originalName="r.V" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." rtlName="r_V_1_fu_129_p2" contextFuncName="counterip" bitwidth="34" opcode="add" m_display="0">
+      <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="25" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="node_30" lineNumber="21" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." contextFuncName="counterip" opcode="br" m_display="0">
+      <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+      <controlInputObjs>block_36</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../ccall/hls/incr_des/incr_des.cpp">
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="47" name="block_47" type="BlockType">
+    <controlInputObjs>block_36</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="node_46" lineNumber="35" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." contextFuncName="counterip" opcode="ret" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="35" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../ccall/hls/incr_des/incr_des.cpp">
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="128" pipe_depth="3" RegionName="counterip_label0">
+    <basic_blocks id="36" name="block_36" type="BlockType">
+      <controlInputObjs>block_31</controlInputObjs>
+      <controlInputObjs>block_45</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_45</controlOutputObjs>
+      <controlOutputObjs>block_47</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="val_assign" originalName="i" bitwidth="32" opcode="phi" nodeLabel="1" m_display="0">
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_31</controlInputObjs>
+        <controlInputObjs>block_45</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_3" lineNumber="21" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." rtlName="tmp_3_fu_139_p2" contextFuncName="counterip" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="node_35" lineNumber="21" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." contextFuncName="counterip" opcode="br" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_47</controlInputObjs>
+        <controlInputObjs>block_45</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ccall/hls/incr_des/incr_des.cpp">
+        <validLinenumbers>21</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="45" name="block_45" type="BlockType">
+      <controlInputObjs>block_36</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_36</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="val_assign_1" lineNumber="25" originalName="val" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." rtlName="val_assign_1_fu_144_p2" contextFuncName="counterip" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="25" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="node_41" lineNumber="21" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." contextFuncName="counterip" opcode="write" nodeLabel="2" nodeLatency="1" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>data_out_data_V</dataOutputObjs>
+        <dataOutputObjs>data_out_keep_V</dataOutputObjs>
+        <dataOutputObjs>data_out_strb_V</dataOutputObjs>
+        <dataOutputObjs>data_out_user_V</dataOutputObjs>
+        <dataOutputObjs>data_out_last_V</dataOutputObjs>
+        <dataOutputObjs>data_out_id_V</dataOutputObjs>
+        <dataOutputObjs>data_out_dest_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="i" lineNumber="21" originalName="i" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." rtlName="i_fu_149_p2" contextFuncName="counterip" bitwidth="32" opcode="add" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="node_44" lineNumber="21" fileName="../../ccall/hls/incr_des/incr_des.cpp" fileDirectory=".." contextFuncName="counterip" opcode="br" nodeLabel="3" m_display="0">
+        <inlineStackInfo fileName="../../ccall/hls/incr_des/incr_des.cpp" linenumber="21" fileDirectory="E:\smez\Training_to_FAEs\hls_interrupt" functionName="counterip"/>
+        <controlInputObjs>block_36</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ccall/hls/incr_des/incr_des.cpp">
+        <validLinenumbers>25</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="tmp_3_reg_170">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="val_assign_1_reg_174">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="val_assign_reg_104">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="r_V_reg_160">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="start_V_read_reg_155">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_179">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="r_V_1_reg_165">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <expressionNodes realName="r_V_fu_123">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_1_fu_129">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="val_assign_1_fu_144">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lhs_V_fu_119">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_V_fu_115">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_139">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_149">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_cast_fu_135">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="val_assign_phi_fu_108">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="beats_read_read_fu_68">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="start_V_read_read_fu_62">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_74">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioPorts name="beats">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_data_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_dest_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_id_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_keep_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_last_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_strb_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out_user_V">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="start_V">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="41" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="12"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="21"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="22"/>
+    </transitions>
+    <transitions inState="2" outState="5">
+      <condition id="20"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="23"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="counterip" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="counterip_label0" mII="1" mDepth="3" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
